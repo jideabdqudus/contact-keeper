@@ -1,3 +1,3 @@
 {
-    "mongoURI":"mongodb+srv://jideabdqudus:<password>@contact-keeper-xrzge.mongodb.net/test?retryWrites=true&w=majority"
+    "mongoURI":"mongodb+srv://jideabdqudus:jideabdqudus@contact-keeper-xrzge.mongodb.net/test?retryWrites=true&w=majority"
 }
