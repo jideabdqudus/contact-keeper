@@ -8,6 +8,13 @@ app.get("/", (req, res) =>
   res.json({ msg: "Welcome to the Contact-Kepper API" })
 );
 
+
+//Define Routes
+
+app.use("/api/users", require("./routes/users"))
+app.use("/api/auth", require("./routes/auth"))
+app.use("/api/contacts", require("./routes/contacts"))
+
 //Set Port
 const PORT = process.env.PORT || 5000;
 
