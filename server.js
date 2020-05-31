@@ -4,8 +4,12 @@ const connectDB = require("./config/db");
 //Initialize Express
 const app = express();
 
-//Conncect DB
+//Conncect DB 
 connectDB();
+
+
+//Init Middleware
+app.use(express.json({extended: false}))
 
 //Sending data to the PORT
 app.get("/", (req, res) =>
