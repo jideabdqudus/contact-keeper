@@ -3,7 +3,7 @@ const router = express.Router();
 const bcrypt = require("bcryptjs");
 const { check, validationResult } = require("express-validator/check");
 
-const User = require("../models/User.js");
+const User = require("../models/User");
 
 // @ route  POST api/users
 //@desc     Register a user
@@ -29,7 +29,7 @@ router.post(
     try {
       let user = await User.findOne({ email });
 
-      if (user) { 
+      if (user) {
         return res.status(400).json({ msg: "User already exists" });
       }
 
