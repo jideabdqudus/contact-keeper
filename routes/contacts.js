@@ -30,7 +30,7 @@ router.post(
     auth,
     [
       check("name", "Name is required").not().isEmpty(),
-      check("type", "Type must be personal or professional").isIn([
+      check("type", "Type must be Personal or Professional").isIn([
         "personal",
         "professional",
       ]),
