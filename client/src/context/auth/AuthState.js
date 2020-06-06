@@ -60,7 +60,7 @@ const AuthState = (props) => {
 
   //Clear errors
   const clearErrors =()=>{
-    console.log('Clear errors')
+    dispatch({type: CLEAR_ERRORS})
   }
 
   return (
