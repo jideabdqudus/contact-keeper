@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import AuthContext from "../../context/auth/AuthContext";
 import ContactContext from "../../context/contact/ContactContext";
 
-
 const Navbar = ({ title, icon }) => {
   const authContext = useContext(AuthContext);
 
